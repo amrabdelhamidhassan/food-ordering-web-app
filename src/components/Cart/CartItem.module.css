@@ -1,0 +1,29 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+.CartItem
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5vw;
+    height: 5vh;
+    box-shadow: 0.4vw 0.4vw primaryColor;
+}
+
+.cartItemText
+{
+    font-size: 1vw;
+    font-weight: bold;
+    padding-right: 1vw;
+}
+.CartItemPrice
+{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: whiteColor;
+    background-color: primaryColor;
+    padding: 1vw 1vw;
+    border-radius: 0.5vw;
+    align-self: center;
+    margin-left: 0.5vw;
+}

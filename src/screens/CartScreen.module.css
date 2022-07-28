@@ -1,0 +1,102 @@
+@value primaryColor, blackColor,whiteColor from '../data/colors.css';
+
+.CartScreen
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5vw 5vw;
+    animation-name: CartScreenAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes CartScreenAnimation {
+    from  {transform:translateX(-100%)}
+to {transform:translateX(0)}
+}
+.Wrapper
+{
+    max-height: 60vh;
+    overflow-y: auto;
+    border:0.2vw solid blackColor ;
+    margin-left: 1vw;
+}
+.addressWrapper
+{
+    margin-left: 5vw;
+}
+.rowWrapper
+{
+    display: flex;
+    flex-direction: row;
+}
+::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: primaryColor;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: blackColor;
+  }
+  
+.TotalPriceBox
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    height: 5vh;
+    box-shadow: 0.4vw 0.4vw primaryColor;
+}
+.TotalPriceText
+{
+    font-size: 1vw;
+    font-weight: bold;
+    padding-right: 1vw;
+}
+.TotalPrice
+{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: whiteColor;
+    background-color: primaryColor;
+    padding: 1vw 1vw;
+    border-radius: 0.3vw;
+}
+.actionBox
+{
+    margin-left: auto;
+}
+.SavedAdressesTitle
+{
+    font-size: 2vw;
+    font-weight: bold;
+    margin:0vw 0 1vw 0;
+}
+.SavedAdressesText
+{
+    font-size: 0.8vw;
+    font-weight: bold;
+    margin:0 0 1vw 1vw;
+}
+.SavedAdressBox
+{
+    font-size: 1vw;
+    font-weight: bolder;
+    color: whiteColor;
+    background-color: primaryColor;
+    padding: 1vw 1vw;
+    border-radius: 0.3vw;
+    margin:1vw 1vw
+}
+.SavedAdressBox:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}

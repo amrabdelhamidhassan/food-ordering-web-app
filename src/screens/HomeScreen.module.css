@@ -1,0 +1,6 @@
+@value primaryColor, blackColor,whiteColor from '../data/colors.css';
+
+.HomeScreen {
+  display: flex;
+  flex-direction: row;
+}

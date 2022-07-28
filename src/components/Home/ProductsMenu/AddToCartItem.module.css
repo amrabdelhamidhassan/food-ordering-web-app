@@ -1,0 +1,48 @@
+@value primaryColor, blackColor,whiteColor from '../../../data/colors.css';
+.AddToCartItem
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5vw;
+    background-color: primaryColor;
+    align-items: center;
+    justify-content: center;
+    padding: 0!important;
+    margin-bottom: 0.2vw;
+}
+.addToCartWrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+.AddToCartItemText
+{
+    font-size: 1vw;
+    font-weight: bold;
+    color: whiteColor;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.outOfStockError
+{
+    font-size: 0.7vw;
+    color: red;
+}
+.AddToCartIcon
+{
+    margin: auto;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.AddToCartIcon:hover
+{
+    animation: AddToCartIconHover 2s infinite ;
+}
+@keyframes AddToCartIconHover {
+    25%{transform: translateY(10%);}
+    50% {transform: translateY(0);}
+    75% {transform: translateY(10%);}
+    100% {transform: translateY(0);}
+
+
+}

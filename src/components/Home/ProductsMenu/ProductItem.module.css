@@ -1,0 +1,39 @@
+@value primaryColor, blackColor,whiteColor from '../../../data/colors.css';
+.ProductItem
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.2vw 0.2vw primaryColor;
+    animation: ProductsItemAnimation 1s ease-in-out
+}
+@keyframes ProductsItemAnimation {
+
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+
+}
+.ProductItemClickWrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProductItem:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.ProductImageStyle
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ProductTextStyle
+{
+    font-size: 1vw;
+    font-weight: bold;
+}

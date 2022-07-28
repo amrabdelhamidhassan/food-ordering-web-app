@@ -1,0 +1,48 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+.SideMenu
+{
+    padding: 1vw;
+    margin: 3vw;
+    padding-right: 10vw;
+    border-right:0.1vw solid primaryColor  ;
+    animation-name: SideMenuAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+@keyframes SideMenuAnimation {
+    from  {transform:translateX(-200%)}
+    to {transform:translateX(0)}
+}
+.CategoriesHeader
+{
+    font-size: 2vw;
+    font-weight: bolder;
+    padding-bottom: 0.6vw;
+    margin-bottom: 1vw;
+    text-shadow: 0.01vw 0.01vw primaryColor;
+    display: flex;
+    background-color: whiteColor;
+    align-items: center;
+    border-bottom: 0.1vw solid black ;
+    justify-content: center;
+}
+.CategoriesHeader:hover
+{
+    cursor: context-menu    ;
+}
+
+
+
+.SubCategoryText
+{
+    font-size: 0.9vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+    text-shadow: 0.01vw 0.01vw primaryColor;
+    display: flex;
+    padding-bottom: 0.5vw;
+    background-color: whiteColor;
+    border-bottom: 0.1vw solid primaryColor ;
+    align-items: center;
+    justify-content: center;
+}

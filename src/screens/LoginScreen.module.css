@@ -1,0 +1,26 @@
+@value primaryColor, blackColor,whiteColor from '../data/colors.css';
+
+.LoginScreen
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: LoginScreenAnimation 1s ease-in-out
+}
+@keyframes LoginScreenAnimation {
+    from  {transform:translateX(-70%)}
+    to {transform:translateX(0)}
+
+}
+.Switchtext
+{
+    color: primaryColor;
+    font-size: 1.2vw;
+    border-bottom: 0.1vw solid primaryColor;
+}
+.Switchtext:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}

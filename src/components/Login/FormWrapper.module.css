@@ -1,0 +1,13 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+.FormWrapper
+{
+    display: flex;
+    padding: 1vw;
+    margin-top: 4vh;
+    flex-direction: column;
+    border-radius: 0.5vw;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.2vw 0.2vw primaryColor;
+}
+

@@ -1,0 +1,34 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+.Input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 100%;
+}
+.Label
+{
+    font-size: 1vw;
+    font-weight: bold;
+    text-shadow: 0.01vw 0.01vw primaryColor;
+}
+.InputText
+{
+
+    border-radius: 0.4vw;
+    font-size: 1.2vw;
+    border-color: primaryColor!important;
+    margin-left: auto;
+    width:60%
+}
+.InputText.TextError
+{
+    border-color: red!important;
+
+}
+.InputError
+{
+    font-size: 0.7vw;
+    color: red;
+}

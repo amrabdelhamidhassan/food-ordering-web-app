@@ -1,0 +1,6 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+.formError
+{
+    font-size: 0.7vw;
+    color: red;
+}

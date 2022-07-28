@@ -1,0 +1,16 @@
+@value primaryColor, blackColor,whiteColor from '../../data/colors.css';
+
+.Button
+{
+    margin: 1vw;
+    background-color: primaryColor;
+    color: whiteColor;
+    font-size: 1vw;
+    border-radius: 0.4vw;
+    padding: 0.5vw 2vw;
+}
+.Button:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
